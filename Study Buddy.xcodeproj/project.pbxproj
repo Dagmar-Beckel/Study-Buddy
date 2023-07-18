@@ -11,6 +11,11 @@
 		896C9EAB2A67228400C4E963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896C9EAA2A67228400C4E963 /* ContentView.swift */; };
 		896C9EAD2A67228500C4E963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896C9EAC2A67228500C4E963 /* Assets.xcassets */; };
 		896C9EB02A67228500C4E963 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896C9EAF2A67228500C4E963 /* Preview Assets.xcassets */; };
+		ED41853E2A683DFD0081B479 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41853D2A683DFD0081B479 /* Home.swift */; };
+		ED4185402A683E070081B479 /* Pomo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41853F2A683E070081B479 /* Pomo.swift */; };
+		ED4185422A683E110081B479 /* ListAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4185412A683E110081B479 /* ListAssign.swift */; };
+		ED4185442A683E240081B479 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4185432A683E240081B479 /* Calendar.swift */; };
+		ED4185462A683E2E0081B479 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4185452A683E2E0081B479 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		896C9EAA2A67228400C4E963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		896C9EAC2A67228500C4E963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896C9EAF2A67228500C4E963 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED41853D2A683DFD0081B479 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ED41853F2A683E070081B479 /* Pomo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomo.swift; sourceTree = "<group>"; };
+		ED4185412A683E110081B479 /* ListAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssign.swift; sourceTree = "<group>"; };
+		ED4185432A683E240081B479 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		ED4185452A683E2E0081B479 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				896C9EA82A67228400C4E963 /* Study_BuddyApp.swift */,
 				896C9EAA2A67228400C4E963 /* ContentView.swift */,
+				ED41853D2A683DFD0081B479 /* Home.swift */,
+				ED41853F2A683E070081B479 /* Pomo.swift */,
+				ED4185412A683E110081B479 /* ListAssign.swift */,
+				ED4185432A683E240081B479 /* Calendar.swift */,
+				ED4185452A683E2E0081B479 /* Persistence.swift */,
 				896C9EAC2A67228500C4E963 /* Assets.xcassets */,
 				896C9EAE2A67228500C4E963 /* Preview Content */,
 			);
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4185402A683E070081B479 /* Pomo.swift in Sources */,
+				ED4185442A683E240081B479 /* Calendar.swift in Sources */,
+				ED4185422A683E110081B479 /* ListAssign.swift in Sources */,
+				ED4185462A683E2E0081B479 /* Persistence.swift in Sources */,
 				896C9EAB2A67228400C4E963 /* ContentView.swift in Sources */,
+				ED41853E2A683DFD0081B479 /* Home.swift in Sources */,
 				896C9EA92A67228400C4E963 /* Study_BuddyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
