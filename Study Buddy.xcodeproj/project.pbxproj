@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		443EC0532A6989F000539563 /* BrainBreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EC0522A6989F000539563 /* BrainBreaks.swift */; };
 		896C9EA92A67228400C4E963 /* Study_BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896C9EA82A67228400C4E963 /* Study_BuddyApp.swift */; };
 		896C9EAB2A67228400C4E963 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896C9EAA2A67228400C4E963 /* ContentView.swift */; };
 		896C9EAD2A67228500C4E963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896C9EAC2A67228500C4E963 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		443EC0522A6989F000539563 /* BrainBreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainBreaks.swift; sourceTree = "<group>"; };
 		896C9EA52A67228400C4E963 /* Study Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896C9EA82A67228400C4E963 /* Study_BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_BuddyApp.swift; sourceTree = "<group>"; };
 		896C9EAA2A67228400C4E963 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		896C9E9C2A67228400C4E963 = {
 			isa = PBXGroup;
 			children = (
+				443EC0522A6989F000539563 /* BrainBreaks.swift */,
 				896C9EA72A67228400C4E963 /* Study Buddy */,
 				896C9EA62A67228400C4E963 /* Products */,
 			);
@@ -211,6 +214,7 @@
 				896C9EAB2A67228400C4E963 /* ContentView.swift in Sources */,
 				896C9F4C2A69756500C4E963 /* ColorExtensions.swift in Sources */,
 				896C9F562A69760B00C4E963 /* PomoView.swift in Sources */,
+				443EC0532A6989F000539563 /* BrainBreaks.swift in Sources */,
 				ED41853E2A683DFD0081B479 /* Home.swift in Sources */,
 				896C9F4A2A69754100C4E963 /* HelperMethod.swift in Sources */,
 				896C9F5E2A69775C00C4E963 /* CountPickerView.swift in Sources */,
