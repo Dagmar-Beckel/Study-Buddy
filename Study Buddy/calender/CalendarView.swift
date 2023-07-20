@@ -11,10 +11,8 @@ struct CalendarView: View
 {
     @EnvironmentObject var dateHolder: DateHolder
     
-    var body: some View
-    {
-        VStack(spacing: 1)
-        {
+    var body: some View {
+        VStack(spacing: 1){
             DateScrollerView()
                 .environmentObject(dateHolder)
                 .padding()
