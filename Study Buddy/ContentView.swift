@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                     
                         ToolbarItem(placement: .navigation) {
-                            NavigationLink(destination: Calendar()){
+                            NavigationLink(destination: CalendarView()){
                                 Text("🗓️")
                             }
                             
