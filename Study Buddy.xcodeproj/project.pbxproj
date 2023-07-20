@@ -63,7 +63,6 @@
 		896C9E9C2A67228400C4E963 = {
 			isa = PBXGroup;
 			children = (
-				443EC0522A6989F000539563 /* BrainBreaks.swift */,
 				896C9EA72A67228400C4E963 /* Study Buddy */,
 				896C9EA62A67228400C4E963 /* Products */,
 			);
@@ -88,6 +87,7 @@
 				896C9F542A6975EA00C4E963 /* Pomo */,
 				ED4185412A683E110081B479 /* ListAssign.swift */,
 				ED4185432A683E240081B479 /* Calendar.swift */,
+				443EC0522A6989F000539563 /* BrainBreaks.swift */,
 				ED4185452A683E2E0081B479 /* Persistence.swift */,
 				896C9EAC2A67228500C4E963 /* Assets.xcassets */,
 				896C9F592A69765E00C4E963 /* Info.plist */,

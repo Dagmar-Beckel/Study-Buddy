@@ -14,7 +14,7 @@ struct Calendar: View {
             VStack{
                 Text("Calender")
                     .font(.title)
-                    .fontWeight(.heavy)
+                    .fontWeight(.bold)
                 Spacer()
             }
         }
