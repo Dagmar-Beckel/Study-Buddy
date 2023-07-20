@@ -9,11 +9,11 @@ import SwiftUI
 
 extension Color {
     
-    static let main_color = Color("PastelBlueOne")
+    static let main_color = Color("PastelPink")
     static let main_secondary_color = Color.white
-    static let primary_color = Color("PastelGreenDark")
-    static let secondary_color = Color("PastelGreen")
-    static let bubble_color = Color("PastelGreen")
+    static let primary_color = Color("pinkLight")
+    static let secondary_color = Color("pinkDark")
+    static let bubble_color = Color("pinkLight")
     static let text_primary_color = Color.black
     
     init(hex: String, alpha: Double = 1) {
