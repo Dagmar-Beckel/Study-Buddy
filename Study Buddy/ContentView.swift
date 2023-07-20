@@ -8,45 +8,46 @@
 import SwiftUI
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            VStack{
-                
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: Home()){
-                        Text("🏠")
-                    }
+        ZStack{
+            Color.primary_color.edgesIgnoringSafeArea(.all)
+            NavigationStack {
+                Color.primary_color.edgesIgnoringSafeArea(.all)
+                VStack{
                 }
-                
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: Home()){
+                            Text("🏠")
+                        }
+                    }
+                    
+                        ToolbarItem(placement: .navigation) {
+                            NavigationLink(destination: Calendar()){
+                                Text("🗓️")
+                            }
+                            
+                        }
                     ToolbarItem(placement: .navigation) {
-                        NavigationLink(destination: Calendar()){
-                            Text("🗓️")
+                        NavigationLink(destination: PomoView()){
+                            Text("⏰")
                         }
                         
                     }
-                ToolbarItem(placement: .navigation) {
-                    NavigationLink(destination: Pomo()){
-                        Text("⏰")
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        NavigationLink(destination: ListAssign()){
+                            Text("✏️")
+                        }
+                         
+                        
                     }
-                    
                 }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink(destination: ListAssign()){
-                        Text("✏️")
-                    }
-                     
-                    
-                }
+                
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Tasks")
+            .fontWeight(.bold)
+            .padding()
             
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle("Tasks")
-        .fontWeight(.bold)
-        .padding()
-        VStack{
-            Text("stack")
         }
     }
 }

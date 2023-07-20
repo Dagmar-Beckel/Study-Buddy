@@ -8,15 +8,17 @@
 import SwiftUI
 struct ListAssign: View {
     var body: some View {
-        VStack{
-            HStack{
+        ZStack{
+            Color.primary_color.edgesIgnoringSafeArea(.all)
+            
+            VStack{
                 Text("Assignments")
                     .font(.title)
                     .fontWeight(.heavy)
                 Spacer()
-                
             }
         }
+        
     }
 }
 struct ListAssign_Previews: PreviewProvider {
