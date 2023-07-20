@@ -10,7 +10,7 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             Color.primary_color.edgesIgnoringSafeArea(.all)
-            NavigationStack {
+            NavigationStack{
                 Color.primary_color.edgesIgnoringSafeArea(.all)
                 VStack{
                 }
@@ -30,6 +30,12 @@ struct ContentView: View {
                     ToolbarItem(placement: .navigation) {
                         NavigationLink(destination: PomoView()){
                             Text("⏰")
+                        }
+                        
+                    }
+                    ToolbarItem(placement: .navigation) {
+                        NavigationLink(destination: BrainBreaks()){
+                            Text("🧠")
                         }
                         
                     }

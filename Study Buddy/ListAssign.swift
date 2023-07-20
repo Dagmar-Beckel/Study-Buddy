@@ -14,7 +14,7 @@ struct ListAssign: View {
             VStack{
                 Text("Assignments")
                     .font(.title)
-                    .fontWeight(.heavy)
+                    .fontWeight(.bold)
                 Spacer()
             }
         }
