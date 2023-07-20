@@ -7,7 +7,10 @@
 
 import SwiftUI
 struct ContentView: View {
+    @EnvironmentObject var dateHolder: DateHolder
+    
     var body: some View {
+
         ZStack{
             Color.primary_color.edgesIgnoringSafeArea(.all)
             NavigationStack{
@@ -22,7 +25,7 @@ struct ContentView: View {
                     }
                     
                         ToolbarItem(placement: .navigation) {
-                            NavigationLink(destination: CalendarView()){
+                            NavigationLink(destination: CalendarView().environmentObject(DateHolder ())){
                                 Text("🗓️")
                             }
                             

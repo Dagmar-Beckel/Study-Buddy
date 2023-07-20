@@ -9,10 +9,11 @@ import SwiftUI
 @main
 struct Study_BuddyApp: App {
     let persistenceController = PersistenceController.shared
+    let dateHolder = DateHolder()
     var body: some Scene {
         WindowGroup {
             ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
-          
+                .environmentObject(dateHolder)
            
         }
     }
