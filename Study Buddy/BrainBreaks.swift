@@ -15,9 +15,10 @@ struct BrainBreaks: View {
     var body: some View {
         ZStack{
             Color.primary_color.edgesIgnoringSafeArea(.all)
+            RadialGradient(colors: [Color("pinkDark"), Color("pinkLight"), .white], center: .center, startRadius: 200, endRadius: 400)
+                .ignoresSafeArea()
             Text("Brain Break Ideas!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+                .font(.custom("ConcertOne-Regular", size: 35))
                 .padding(.init(top: 0, leading: 0, bottom: 650, trailing: 0))
             VStack {
                 
@@ -26,7 +27,10 @@ struct BrainBreaks: View {
                     idea1=options[Int.random(in: 0..<options.count)]
                     idea2=options[Int.random(in:0..<options.count)]
                 }
-                .font(.title)
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                .tint(Color("tan"))
+                .font(.custom("ConcertOne-Regular", size: 30))
                 .padding(.init(top: 0, leading: 5, bottom: 70, trailing: 0))
                 
                 Text("Option 1")

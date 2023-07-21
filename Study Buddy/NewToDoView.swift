@@ -51,7 +51,7 @@ struct NewToDoView: View {
                 }
                 
                 Button(action:{
-                    self.addTask(title: self.title, isImportant: self.isImportant)
+                    self.addTask(title: self.title, isImportant: self.isImportant, isAssignment: self.isAssignment, isProject: self.isProject)
                 }){
                     Text("Add")
                 }
@@ -59,11 +59,13 @@ struct NewToDoView: View {
             .padding()
         }
     }
-    private func addTask(title: String, isImportant: Bool = false) {
+    private func addTask(title: String, isImportant: Bool = false, isAssignment: Bool = false, isProject: Bool = false) {
         let task = ToDo(context: context)
         task.id = UUID()
         task.title = title
         task.isImportant = isImportant
+        //task.isAssignment = isAssignment
+        //task.isProject = isProject
         do{
             try context.save()
         }catch{

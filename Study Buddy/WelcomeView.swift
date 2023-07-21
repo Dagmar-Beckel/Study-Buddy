@@ -23,6 +23,7 @@ struct WelcomeView: View {
                 VStack{
                     Text("Welcome to")
                         .font(.custom("ConcertOne-Regular", size: 46))
+                    Text("")
                     Text("Study Buddy")
                         .font(.custom("ConcertOne-Regular", size: 46))
                     Spacer()
