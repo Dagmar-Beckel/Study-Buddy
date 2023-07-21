@@ -15,7 +15,6 @@ struct ListAssign: View {
         
     var toDoItems: FetchedResults<ToDo>
     
-    
     var body: some View {
         VStack{
             HStack{
@@ -36,7 +35,8 @@ struct ListAssign: View {
                 ForEach(toDoItems){ toDoItem in
                     if toDoItem.isImportant == true {
                         Text("‼️" + (toDoItem.title ?? "No title"))
-                    } else {Text(toDoItem.title ?? "No title")
+                    } else {
+                        Text(toDoItem.title ?? "No title")
                     }
                         }
                 .onDelete(perform: deleteTask)
@@ -48,6 +48,7 @@ struct ListAssign: View {
             NewToDoView(title: "", isImportant: false, isAssignment: false, isProject: false)
                 }
     }
+    
     private func deleteTask(offsets: IndexSet) {
         withAnimation {
             offsets.map { toDoItems[$0] }.forEach(context.delete)
