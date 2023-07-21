@@ -84,16 +84,16 @@ struct Home: View {
                     ToolbarItem(placement: .navigation){
                         NavigationLink(destination: BrainBreaks()){
                             VStack{
-                                Divider()
+                                /*Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2)
+                                    .frame(height: 2) */
                                 brainImage
                                 Text("Breaks")
                                     .font(.custom("ConcertOne-Regular", size: 15))
                                     .tint(.black)
-                                Divider()
+                               /* Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2)
+                                    .frame(height: 2) */
                             }
                         }
                     }
@@ -101,9 +101,9 @@ struct Home: View {
                     ToolbarItem(placement: .navigation){
                         NavigationLink(destination: ListAssign()){
                             VStack{
-                                Divider()
+                               /* Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2)
+                                    .frame(height: 2) */
                                 taskImage
                                 Text("Tasks")
                                     .font(.custom("ConcertOne-Regular", size: 15))
@@ -116,9 +116,9 @@ struct Home: View {
                     ToolbarItem(placement: .navigation){
                         NavigationLink(destination: CalendarView()){
                             VStack{
-                                Divider()
+                                /*Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2)
+                                    .frame(height: 2) */
                                 calendarImage
                                 Text("Calendar")
                                     .font(.custom("ConcertOne-Regular", size: 15))
@@ -131,9 +131,9 @@ struct Home: View {
                     ToolbarItem(placement: .navigation){
                         NavigationLink(destination: PomoView()){
                             VStack{
-                                Divider()
+                               /* Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2)
+                                    .frame(height: 2) */
                                 pomoImage
                                 Text("Timer")
                                     .font(.custom("ConcertOne-Regular", size: 15))
@@ -143,13 +143,13 @@ struct Home: View {
                         
                     }
                 } .padding()
-                ScrollView{
+                VStack{
                     VStack{
                         Spacer()
                         Text("")
-                        Divider()
+                       /* Divider()
                             .frame(width: 300, height:2)
-                            .overlay(Color("yellowLight"))
+                            .overlay(Color("yellowLight")) */
                         Text("")
                         
                         
@@ -165,6 +165,7 @@ struct Home: View {
                             
                             Spacer()
                         }
+                        
                         List {
                             ForEach(toDoItems){ toDoItem in
                                 if toDoItem.isImportant == true {
@@ -193,9 +194,9 @@ struct Home: View {
                         
                         
                     }
-                    Divider()
+                    /*Divider()
                         .overlay(.white)
-                        .frame(width:100, height:5)
+                        .frame(width:100, height:5) */
                     Spacer()
                     VStack{
                         Button("Calendar"){
@@ -208,12 +209,11 @@ struct Home: View {
                         ZStack{
                             
                             RoundedRectangle(cornerRadius: 50)
-                                .foregroundColor(.white)
+                                .foregroundColor(Color("PastelOrange"))
                                 .frame(width: 390, height: 300)
                                 .padding(.horizontal)
                                 .padding(.top, 30)
                             CalendarView()
-                            
                                 .padding(.top, 25)
                                 .padding(.horizontal, 30)
                             
@@ -222,7 +222,7 @@ struct Home: View {
                     }
                 }
             }
-        }
+       }
     }
     
     
