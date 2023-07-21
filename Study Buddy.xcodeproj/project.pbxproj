@@ -28,6 +28,13 @@
 		ED41853E2A683DFD0081B479 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41853D2A683DFD0081B479 /* Home.swift */; };
 		ED4185422A683E110081B479 /* ListAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4185412A683E110081B479 /* ListAssign.swift */; };
 		ED4185462A683E2E0081B479 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4185452A683E2E0081B479 /* Persistence.swift */; };
+		EDAEC3162A69EF4200200102 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3152A69EF4200200102 /* ToDoItem.swift */; };
+		EDAEC3182A69EF9D00200102 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3172A69EF9D00200102 /* NewToDoView.swift */; };
+		EDAEC31B2A69EFC300200102 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3192A69EFC300200102 /* ToDoList.xcdatamodeld */; };
+		EDAEC31D2A69F05300200102 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC31C2A69F05300200102 /* WelcomeView.swift */; };
+		EDAEC31F2A6A066500200102 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */; };
+		EDAEC3212A6A0CB700200102 /* WelcomeGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */; };
+		EDAEC3232A6A0D1B00200102 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3222A6A0D1B00200102 /* GifImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +64,13 @@
 		ED41853D2A683DFD0081B479 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		ED4185412A683E110081B479 /* ListAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssign.swift; sourceTree = "<group>"; };
 		ED4185452A683E2E0081B479 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EDAEC3152A69EF4200200102 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		EDAEC3172A69EF9D00200102 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		EDAEC31A2A69EFC300200102 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		EDAEC31C2A69F05300200102 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ConcertOne-Regular.ttf"; path = "../../../Downloads/Concert_One/ConcertOne-Regular.ttf"; sourceTree = "<group>"; };
+		EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WelcomeGif.gif; sourceTree = "<group>"; };
+		EDAEC3222A6A0D1B00200102 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,15 +121,22 @@
 				896C9F4F2A69759300C4E963 /* Montserrats */,
 				896C9EA82A67228400C4E963 /* Study_BuddyApp.swift */,
 				896C9EAA2A67228400C4E963 /* ContentView.swift */,
-				ED41853D2A683DFD0081B479 /* Home.swift */,
 				896C9F542A6975EA00C4E963 /* Pomo */,
 				ED4185412A683E110081B479 /* ListAssign.swift */,
+				EDAEC31C2A69F05300200102 /* WelcomeView.swift */,
+				EDAEC3152A69EF4200200102 /* ToDoItem.swift */,
+				EDAEC3172A69EF9D00200102 /* NewToDoView.swift */,
 				443EC0522A6989F000539563 /* BrainBreaks.swift */,
+				ED41853D2A683DFD0081B479 /* Home.swift */,
 				ED4185452A683E2E0081B479 /* Persistence.swift */,
+				EDAEC3222A6A0D1B00200102 /* GifImage.swift */,
 				896C9EAC2A67228500C4E963 /* Assets.xcassets */,
+				EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */,
 				896C9F592A69765E00C4E963 /* Info.plist */,
+				EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */,
 				896C9F5B2A69774D00C4E963 /* TimerView.swift */,
 				896C9F5D2A69775C00C4E963 /* CountPickerView.swift */,
+				EDAEC3192A69EFC300200102 /* ToDoList.xcdatamodeld */,
 				896C9EAE2A67228500C4E963 /* Preview Content */,
 			);
 			path = "Study Buddy";
@@ -216,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAEC3212A6A0CB700200102 /* WelcomeGif.gif in Resources */,
 				896C9EB02A67228500C4E963 /* Preview Assets.xcassets in Resources */,
+				EDAEC31F2A6A066500200102 /* ConcertOne-Regular.ttf in Resources */,
 				896C9EAD2A67228500C4E963 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,12 +253,17 @@
 			files = (
 				896C9F4E2A69757E00C4E963 /* MontserratFontModifiers.swift in Sources */,
 				4448719B2A69B9B200D70BE5 /* CalendarHelper.swift in Sources */,
+				EDAEC3232A6A0D1B00200102 /* GifImage.swift in Sources */,
+				EDAEC3162A69EF4200200102 /* ToDoItem.swift in Sources */,
 				ED4185422A683E110081B479 /* ListAssign.swift in Sources */,
 				444871952A69B94200D70BE5 /* CalendarView.swift in Sources */,
+				EDAEC31B2A69EFC300200102 /* ToDoList.xcdatamodeld in Sources */,
 				ED4185462A683E2E0081B479 /* Persistence.swift in Sources */,
 				896C9F5C2A69774D00C4E963 /* TimerView.swift in Sources */,
 				896C9F582A69762500C4E963 /* PomoViewModel.swift in Sources */,
 				896C9EAB2A67228400C4E963 /* ContentView.swift in Sources */,
+				EDAEC31D2A69F05300200102 /* WelcomeView.swift in Sources */,
+				EDAEC3182A69EF9D00200102 /* NewToDoView.swift in Sources */,
 				896C9F4C2A69756500C4E963 /* ColorExtensions.swift in Sources */,
 				444871912A69B8F300D70BE5 /* DateHolder.swift in Sources */,
 				4448719D2A69BA3200D70BE5 /* CalendarCell.swift in Sources */,
@@ -445,6 +473,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EDAEC3192A69EFC300200102 /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EDAEC31A2A69EFC300200102 /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = EDAEC31A2A69EFC300200102 /* ToDoList.xcdatamodel */;
+			name = ToDoList.xcdatamodeld;
+			path = ../../ToDoList/ToDoList/ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 896C9E9D2A67228400C4E963 /* Project object */;
 }

@@ -12,7 +12,7 @@ struct Study_BuddyApp: App {
     let dateHolder = DateHolder()
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
+            WelcomeView().environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(dateHolder)
            
         }
