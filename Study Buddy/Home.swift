@@ -106,9 +106,9 @@ struct Home: View {
                         .overlay(Color("yellowLight"))
                     Text("")
 
-                    Spacer()
+                    
                     HStack{
-
+                        Text("    ")
                         Button("Your To Do List"){
                             
                         }
@@ -130,7 +130,18 @@ struct Home: View {
                     }
                     .listStyle(.plain)
                     
-                    
+                    HStack{
+                        Text("    ")
+                        Button("Calendar"){
+                            
+                        }
+                            .font(.custom("ConcertOne-Regular", size: 20))
+                            .buttonStyle(.borderedProminent)
+                            .buttonBorderShape(.capsule)
+                            .tint(Color("pinkLight"))
+                            
+                        Spacer()
+                    }
                     
                     
                     Spacer()
