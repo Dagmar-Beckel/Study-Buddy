@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     
     var body: some View {
-        let tempGradient = RadialGradient(colors: [Color("pinkLight"), .white], center: .center, startRadius: 200, endRadius: 400)
+        let tempGradient = RadialGradient(colors: [Color("pinkLight"), Color("pinkLight")], center: .center, startRadius: 200, endRadius: 400)
             .ignoresSafeArea()
         let homeImage = Image("home")
             .resizable()
@@ -23,6 +23,9 @@ struct WelcomeView: View {
                 VStack{
                     Text("Welcome to")
                         .font(.custom("ConcertOne-Regular", size: 46))
+                    Divider()
+                        .overlay(.white)
+                        .frame(width:200, height:15)
                     Text("")
                     Text("Study Buddy")
                         .font(.custom("ConcertOne-Regular", size: 46))

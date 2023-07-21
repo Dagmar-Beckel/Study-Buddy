@@ -17,7 +17,7 @@ struct NewToDoView: View {
     
     var body: some View {
         ZStack{
-            LinearGradient(colors: [Color("pinkLight"),Color.white], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color("PastelBlue"),Color("PastelBlue")], startPoint: .top, endPoint: .bottom)
             VStack(){
                 Text("Task title:")
                     .font(.title3)

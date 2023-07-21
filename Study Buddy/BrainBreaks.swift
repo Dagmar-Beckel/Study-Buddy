@@ -15,7 +15,7 @@ struct BrainBreaks: View {
     var body: some View {
         ZStack{
             Color.primary_color.edgesIgnoringSafeArea(.all)
-            RadialGradient(colors: [Color("pinkDark"), Color("pinkLight"), .white], center: .center, startRadius: 200, endRadius: 400)
+            RadialGradient(colors: [Color("PastelGreen"), Color("PastelGreen")], center: .center, startRadius: 200, endRadius: 400)
                 .ignoresSafeArea()
             Text("Brain Break Ideas!")
                 .font(.custom("ConcertOne-Regular", size: 35))
