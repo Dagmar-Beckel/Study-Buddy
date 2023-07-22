@@ -17,6 +17,7 @@ struct ListAssign: View {
     
     var body: some View {
         ZStack{
+            Color.list_color.edgesIgnoringSafeArea(.all)
             LinearGradient(colors: [Color("tan"), Color("tan")], startPoint: .top, endPoint: .bottom)
             VStack{
                 HStack{
@@ -37,8 +38,10 @@ struct ListAssign: View {
                     ForEach(toDoItems){ toDoItem in
                         if toDoItem.isImportant == true {
                             Text("‼️" + (toDoItem.title ?? "No title"))
+                                //.background("tan")
                         } else {
                             Text(toDoItem.title ?? "No title")
+                                //.background("tan")
                         }
                     }
                     .onDelete(perform: deleteTask)
@@ -49,7 +52,9 @@ struct ListAssign: View {
             
             if showNewTask {
                 NewToDoView(title: "", isImportant: false, isAssignment: false, isProject: false)
+                    
             }
+            
         }
         
         private func deleteTask(offsets: IndexSet) {

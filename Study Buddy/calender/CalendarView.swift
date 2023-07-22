@@ -12,14 +12,18 @@ struct CalendarView: View
     @EnvironmentObject var dateHolder: DateHolder
     
     var body: some View {
-        VStack(spacing: 1){
-            DateScrollerView()
-                .environmentObject(dateHolder)
-                .padding()
-            dayOfWeekStack
-            calendarGrid
-            
+        ZStack{
+            Color.calendar_color.edgesIgnoringSafeArea(.all)
+            VStack(spacing: 1){
+                DateScrollerView()
+                    .environmentObject(dateHolder)
+                    .padding()
+                dayOfWeekStack
+                calendarGrid
+                
+            }
         }
+        
     }
     
     var dayOfWeekStack: some View
@@ -63,7 +67,8 @@ struct CalendarView: View
             }
         }
         .frame(maxHeight: .infinity)
-        
+        .background(Color("PastelPurple"))
+        .cornerRadius(15)
     }
 }
 

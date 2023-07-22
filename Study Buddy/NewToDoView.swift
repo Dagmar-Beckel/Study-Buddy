@@ -17,7 +17,9 @@ struct NewToDoView: View {
     
     var body: some View {
         ZStack{
+            
             LinearGradient(colors: [Color("PastelBlue"),Color("PastelBlue")], startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
             VStack(){
                 Text("Task title:")
                     .font(.title3)
@@ -39,7 +41,7 @@ struct NewToDoView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .buttonBorderShape(.capsule)
-                    .tint(Color("blueLight"))
+                    .tint(Color("blueDark"))
                 }
                 Toggle(isOn: $isImportant) {
                     Button("Important"){

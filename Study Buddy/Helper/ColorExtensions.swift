@@ -15,6 +15,8 @@ extension Color {
     static let secondary_color = Color("pinkDark")
     static let bubble_color = Color("pinkLight")
     static let text_primary_color = Color.black
+    static let list_color = Color("tan")
+    static let calendar_color = Color("PastelPurple")
     
     init(hex: String, alpha: Double = 1) {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

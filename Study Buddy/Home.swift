@@ -24,10 +24,10 @@ struct Home: View {
     //home page stuff
     var toDoItems: FetchedResults<ToDo>
     var body: some View {
-        let homeImage = Image("home")
+        /*let homeImage = Image("home")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 75, height:75, alignment: .center)
+            .frame(width: 75, height:75, alignment: .center)*/
         let taskImage = Image("task")
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -73,9 +73,13 @@ struct Home: View {
         NavigationStack{
             
             ZStack{
-                
-                LinearGradient(colors: [Color("pinkLight"), Color("pinkLight")], startPoint: .top, endPoint: .bottom)
-                
+                Color.primary_color.edgesIgnoringSafeArea(.all)
+                //LinearGradient(colors: [Color("pinkLight"), Color("pinkLight")], startPoint: .top, endPoint: .bottom)
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(.white)
+                    .frame(width: 390, height: 60)
+                    .padding(.horizontal)
+                    .padding(.bottom, 750)
                 VStack{
                     
                 }
@@ -87,7 +91,10 @@ struct Home: View {
                                 /*Divider()
                                     .overlay(Color("pinkDark"))
                                     .frame(height: 2) */
+                                
                                 brainImage
+                                    .padding(.top, 40)
+                                    
                                 Text("Breaks")
                                     .font(.custom("ConcertOne-Regular", size: 15))
                                     .tint(.black)
@@ -95,8 +102,11 @@ struct Home: View {
                                     .overlay(Color("pinkDark"))
                                     .frame(height: 2) */
                             }
+                            .padding(10)
+                            
                         }
                     }
+                    
                     
                     ToolbarItem(placement: .navigation){
                         NavigationLink(destination: ListAssign()){
@@ -105,10 +115,13 @@ struct Home: View {
                                     .overlay(Color("pinkDark"))
                                     .frame(height: 2) */
                                 taskImage
+                                    .padding(.top, 40)
                                 Text("Tasks")
                                     .font(.custom("ConcertOne-Regular", size: 15))
                                     .tint(.black)
+                                    .padding(.top, 5)
                             }
+                            .padding(10)
                         }
                         
                     }
@@ -118,13 +131,16 @@ struct Home: View {
                             VStack{
                                 /*Divider()
                                     .overlay(Color("pinkDark"))
-                                    .frame(height: 2) */
+                                    .frame(height: 2)*/
                                 calendarImage
+                                    .padding(.top, 47)
                                 Text("Calendar")
+                                    .padding(.top,0)
                                     .font(.custom("ConcertOne-Regular", size: 15))
                                     .tint(.black)
                                 
                             }
+                            .padding(10)
                         }
                         
                     }
@@ -135,14 +151,17 @@ struct Home: View {
                                     .overlay(Color("pinkDark"))
                                     .frame(height: 2) */
                                 pomoImage
+                                    .padding(.top, 40)
                                 Text("Timer")
                                     .font(.custom("ConcertOne-Regular", size: 15))
                                     .tint(.black)
                             }
+                            .padding(10)
                         }
                         
                     }
-                } .padding()
+                }
+                .padding(50)
                 VStack{
                     VStack{
                         Spacer()
@@ -158,6 +177,7 @@ struct Home: View {
                             Button("Your To Do List"){
                                 
                             }
+                            .padding(.top,60)
                             .font(.custom("ConcertOne-Regular", size: 20))
                             .buttonStyle(.borderedProminent)
                             .buttonBorderShape(.capsule)
@@ -169,12 +189,13 @@ struct Home: View {
                         List {
                             ForEach(toDoItems){ toDoItem in
                                 if toDoItem.isImportant == true {
-                                    Text((toDoItem.title ?? "No title"))
+                                    Text("‼️" + (toDoItem.title ?? "No title"))
                                 } else {Text(toDoItem.title ?? "No title")
                                 }
                             }
                             .onDelete(perform: deleteTask)
                         }
+                        
                         .listStyle(.plain)
                         Spacer()
                         /*HStack{
@@ -203,13 +224,15 @@ struct Home: View {
                             
                         }
                         .font(.custom("ConcertOne-Regular", size: 20))
+                        //.foreground(.black)
                         .buttonStyle(.borderedProminent)
                         .buttonBorderShape(.capsule)
-                        .tint(Color("tan"))
+                        .tint(Color("PastelGreen"))
+                        
                         ZStack{
                             
                             RoundedRectangle(cornerRadius: 50)
-                                .foregroundColor(Color("PastelOrange"))
+                                .foregroundColor(Color("PastelPurple"))
                                 .frame(width: 390, height: 300)
                                 .padding(.horizontal)
                                 .padding(.top, 30)
@@ -220,7 +243,9 @@ struct Home: View {
                         }
                         Spacer()
                     }
+                    .padding(.bottom, 60)
                 }
+                .navigationBarBackButtonHidden(true)
             }
        }
     }

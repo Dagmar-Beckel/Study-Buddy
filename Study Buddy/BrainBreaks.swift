@@ -30,6 +30,7 @@ struct BrainBreaks: View {
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
                 .tint(Color("tan"))
+                .foregroundColor(Color("PastelBlueOne"))
                 .font(.custom("ConcertOne-Regular", size: 30))
                 .padding(.init(top: 0, leading: 5, bottom: 70, trailing: 0))
                 
@@ -37,20 +38,47 @@ struct BrainBreaks: View {
                     .font(.title2)
                 Text("___________")
                     .padding(.init(top: 0, leading: 5, bottom: 0, trailing: 0))
-                Text("\(idea1)")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .padding(.init(top: 1, leading: 0, bottom: 50, trailing: 0))
+                
+                ZStack{
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(Color("tan"))
+                        .frame(width: 380, height: 30)
+                        .padding(.horizontal)
+                        .padding(.bottom, 50)
+                    VStack{
+                        Text("\(idea1)")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color("PastelBlueOne"))
+                            .padding(.init(top: 3, leading: 0, bottom: 50, trailing: 0))
+                    }
+                    
+                    
+                }
+                
+                
                 
                 Text("Option 2")
                     .font(.title2)
                 Text("____________")
                     .padding(.init(top: 0, leading: 5, bottom: 0, trailing: 0))
-                Text("\(idea2)")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .padding(.init(top: 1, leading: 0, bottom: 0, trailing: 0))
                 
+                ZStack{
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(Color("tan"))
+                        .frame(width: 380, height: 30)
+                        .padding(.horizontal)
+                        //.padding(.bottom, 0)
+                    VStack{
+                        Text("\(idea2)")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color("PastelBlueOne"))
+                            .padding(.init(top: 1, leading: 0, bottom: 0, trailing: 0))
+                    }
+                    
+                    
+                }
             }
         }
         

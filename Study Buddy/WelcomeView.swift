@@ -23,22 +23,20 @@ struct WelcomeView: View {
                 VStack{
                     Text("Welcome to")
                         .font(.custom("ConcertOne-Regular", size: 46))
-                    Divider()
+                    /*Divider()
                         .overlay(.white)
-                        .frame(width:200, height:15)
+                        .frame(width:200, height:15)*/
                     Text("")
                     Text("Study Buddy")
                         .font(.custom("ConcertOne-Regular", size: 46))
                     Spacer()
                     NavigationLink(destination: Home()){
                             homeImage}
-                    
-                    
                 }
                 Spacer()
                GifImage("WelcomeGif")
                     .frame(width:500, height:110)
-                    .border(.white, width: 6)
+                    .border(Color("pinkDark"), width: 3)
             }
         }
     }

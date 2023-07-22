@@ -32,7 +32,6 @@
 		EDAEC3182A69EF9D00200102 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3172A69EF9D00200102 /* NewToDoView.swift */; };
 		EDAEC31B2A69EFC300200102 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3192A69EFC300200102 /* ToDoList.xcdatamodeld */; };
 		EDAEC31D2A69F05300200102 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC31C2A69F05300200102 /* WelcomeView.swift */; };
-		EDAEC31F2A6A066500200102 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */; };
 		EDAEC3212A6A0CB700200102 /* WelcomeGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */; };
 		EDAEC3232A6A0D1B00200102 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEC3222A6A0D1B00200102 /* GifImage.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		EDAEC3172A69EF9D00200102 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 		EDAEC31A2A69EFC300200102 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		EDAEC31C2A69F05300200102 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ConcertOne-Regular.ttf"; path = "../../../Downloads/Concert_One/ConcertOne-Regular.ttf"; sourceTree = "<group>"; };
 		EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WelcomeGif.gif; sourceTree = "<group>"; };
 		EDAEC3222A6A0D1B00200102 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +131,6 @@
 				896C9EAC2A67228500C4E963 /* Assets.xcassets */,
 				EDAEC3202A6A0CB700200102 /* WelcomeGif.gif */,
 				896C9F592A69765E00C4E963 /* Info.plist */,
-				EDAEC31E2A6A066500200102 /* ConcertOne-Regular.ttf */,
 				896C9F5B2A69774D00C4E963 /* TimerView.swift */,
 				896C9F5D2A69775C00C4E963 /* CountPickerView.swift */,
 				EDAEC3192A69EFC300200102 /* ToDoList.xcdatamodeld */,
@@ -239,7 +236,6 @@
 			files = (
 				EDAEC3212A6A0CB700200102 /* WelcomeGif.gif in Resources */,
 				896C9EB02A67228500C4E963 /* Preview Assets.xcassets in Resources */,
-				EDAEC31F2A6A066500200102 /* ConcertOne-Regular.ttf in Resources */,
 				896C9EAD2A67228500C4E963 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
